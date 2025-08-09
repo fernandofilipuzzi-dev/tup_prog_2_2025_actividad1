@@ -32,15 +32,15 @@ public class Cilindro
     {
         var culture = CultureInfo.InvariantCulture;
 
-        string descripcion= @$"{{
+        string descripcion = @$"{{
   ""Tipo"": ""Cilindro"", 
   ""Tapas"": 
   [
     {tapas[0].Describir()}, 
     {tapas[1].Describir()}
   ],
-  ""Lado"": { lado.Describir() },
-  ""Area"": {CalcularArea().ToString("f2",culture)},
+  ""Lado"": {lado.Describir()},
+  ""Area"": {CalcularArea().ToString("f2", culture)},
   ""Volumen"": {CalcularVolumen().ToString("f2", culture)}
 }}";
         return descripcion;

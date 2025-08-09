@@ -15,7 +15,7 @@ public class RectanguloDesarrollado:Rectangulo
         return @$"
 {{ 
   ""Tipo"": ""RectanguloDesarrollado"", 
-  ""Lago"": {Largo.ToString("f2", culture)}, 
+  ""Largo"": {Largo.ToString("f2", culture)}, 
   ""Ancho"": {Ancho.ToString("f2", culture)}, 
   ""Area"": {CalcularArea().ToString("f2", culture)}
 }}";
